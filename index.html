@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Memory Game | Creator: Dipu Chowdhury </title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    
+    <h1> <center> The Ultimate Memory Challenge </center></h1>
+    <center>
+      Welcome to the Challenge! <br>
+      WARNING: User may experience severe childhood flashbacks. <br>
+      Repeat back the pattern by pressing buttons. Note you will only be given 3 chances. Best of Luck!
+    </center>
+    
+    <p>
+      <button id="startBtn" onclick="startGame()">Start</button>
+      <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button> 
+    </p>
+    
+    <center>
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()" style="vertical-align:top">
+          <img src="https://cdn.glitch.com/fff32fa4-726d-4dc1-ad1f-9bba98e23d45%2FFrog.jpg?v=1616610082637"
+             width="150" height="150">
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()">
+          <img src="https://cdn.glitch.com/fff32fa4-726d-4dc1-ad1f-9bba98e23d45%2FCookieMonster.jfif?v=1616610124199"
+             width="150" height="150">
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()">
+          <img src="https://cdn.glitch.com/fff32fa4-726d-4dc1-ad1f-9bba98e23d45%2FPatrick.jpg?v=1616611102941"
+             width="125" height="150">
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()">
+          <img src="https://cdn.glitch.com/fff32fa4-726d-4dc1-ad1f-9bba98e23d45%2FBunny.jfif?v=1616612667241"
+             width="170" height="150">
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()">
+         <img src="https://cdn.glitch.com/fff32fa4-726d-4dc1-ad1f-9bba98e23d45%2FJerry.jpg?v=1616612661184"
+             width="150" height="150">
+      </button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()">
+         <img src="https://cdn.glitch.com/fff32fa4-726d-4dc1-ad1f-9bba98e23d45%2FDannyPhantom.jpg?v=1616612656566"
+             width="125" height="150">
+      </button>
+    </div>
+    </center>
+    
+    
+  </body>
+</html>
